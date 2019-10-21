@@ -260,3 +260,19 @@ main .processContainer {
 main div {
   border: 1px solid green;
 }
+#process {
+  text-align: center;
+}
+#process .processContainer {
+  display: flex;
+  margin: 1%;
+}
+#process .processContainer div {
+  margin: 1%;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+#process .processContainer div h3 {
+  font-size: 2rem;
+  padding: 10px;
+}
