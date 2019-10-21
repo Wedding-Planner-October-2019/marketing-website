@@ -1,0 +1,38 @@
+// Contact Form Styles
+
+#contact{
+    text-align: center;
+    margin-top: 20px;
+    
+   form{
+    .border();
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 1%;
+    .flex(center,center);
+    flex-flow: column wrap;
+
+    input[type=text], select, textarea {
+        width: 50%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        .border();
+        outline: none;
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      }
+
+    input[type=submit] {
+        .sendButton();
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken(rgba(0, 0, 0, 0.2), 10);
+            border: none;
+            color: @white;
+          }
+      }
+  }
+
+    
+}
