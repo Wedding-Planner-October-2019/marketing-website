@@ -427,10 +427,6 @@ footer p {
 .aboutContainer .card {
   border: 1px solid #212529;
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
   width: 23%;
   margin: 1%;
   padding: 1%;
