@@ -7,18 +7,6 @@ header {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
-	nav {
-		.flex(center, center);
-        justify-content: space-around;
-        padding-top: 2%;
-
-		a {
-			text-decoration: none;
-			font-size: 2rem;
-			color: @nav-bar;
-		}
-	}
-
 	.hero {
 		width: 100vh;
 		height: 100vh;
@@ -37,7 +25,12 @@ header {
 			padding: 20px;
 		}
 		.callToAction {
-			.button();
+            .button();
+            outline: none;
+            
+            &:hover{
+                border: none;
+            }
 		}
 	}
 }
