@@ -1,0 +1,19 @@
+// Mixin-it-up 
+
+// General Flex
+.flex (@justify, @align){
+    display: flex; 
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button (@bg: Transparent, @fontColor: white, @fontSize: 2rem, @padding: 10px){
+    background: @bg;
+    color: @fontColor;
+    font-size: @fontSize;
+    padding: @padding;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+}
