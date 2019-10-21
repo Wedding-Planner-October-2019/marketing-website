@@ -251,15 +251,6 @@ header .hero .callToAction {
 header .hero .callToAction:hover {
   border: none;
 }
-main {
-  border: 1px solid red;
-}
-main .processContainer {
-  border: 1px solid blue;
-}
-main div {
-  border: 1px solid green;
-}
 #process {
   text-align: center;
 }
@@ -272,7 +263,7 @@ main div {
 }
 #process .processContainer div {
   margin: 1%;
-  border: 1px solid grey;
+  border: 1px solid #212529;
   border-radius: 20px;
 }
 #process .processContainer div h3 {
@@ -291,15 +282,19 @@ main div {
   justify-content: space-around;
 }
 #portfolio .portfolioContainer div {
-  background: red;
+  border: 1px solid #212529;
+  border-radius: 20px;
   width: 32%;
   height: auto;
   margin: 0.5%;
   padding: 1%;
 }
 #portfolio .portfolioContainer div img {
-  width: 55%;
-  height: auto;
+  border-radius: 20px;
+  transition: transform 0.2s;
+}
+#portfolio .portfolioContainer div img:hover {
+  transform: scale(1);
 }
 #portfolio .portfolioContainer div details summary {
   font-size: 1.5rem;
