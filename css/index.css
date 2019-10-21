@@ -137,6 +137,7 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   margin: 0 auto;
+  background: #FFF8DC;
 }
 h1,
 h2,
@@ -265,6 +266,7 @@ header .hero .callToAction:hover {
   margin: 1%;
   border: 1px solid #212529;
   border-radius: 20px;
+  background: #FFFFFF;
 }
 #process .processContainer div h3 {
   font-size: 2rem;
@@ -284,17 +286,18 @@ header .hero .callToAction:hover {
 #portfolio .portfolioContainer div {
   border: 1px solid #212529;
   border-radius: 20px;
+  background: #FFFFFF;
   width: 32%;
   height: auto;
   margin: 0.5%;
   padding: 1%;
+  transition: transform 0.2s;
+}
+#portfolio .portfolioContainer div:hover {
+  transform: scale(1.1);
 }
 #portfolio .portfolioContainer div img {
   border-radius: 20px;
-  transition: transform 0.2s;
-}
-#portfolio .portfolioContainer div img:hover {
-  transform: scale(1.1);
 }
 #portfolio .portfolioContainer div details summary {
   font-size: 1.5rem;
@@ -358,4 +361,29 @@ footer p {
   padding: 1%;
   text-align: center;
   color: #FFFFFF;
+}
+.aboutContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.aboutContainer div {
+  border: 1px solid #212529;
+  border-radius: 20px;
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  background: #FFFFFF;
+}
+.aboutContainer div img {
+  border-radius: 20px;
+  margin-bottom: 2%;
+}
+.aboutContainer div h3 {
+  font-size: 2rem;
+}
+.aboutContainer div a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
 }
