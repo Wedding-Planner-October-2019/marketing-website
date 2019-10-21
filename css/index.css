@@ -172,10 +172,25 @@ nav {
   justify-content: space-around;
   padding-top: 2%;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
 nav a {
   text-decoration: none;
   font-size: 2rem;
   color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  nav a {
+    padding: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+  }
 }
 nav a:hover {
   color: gray;
@@ -197,8 +212,25 @@ header .hero {
   text-align: center;
   color: white;
 }
+@media (max-width: 500px) {
+  header .hero {
+    margin: 0;
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  header .hero div {
+    margin-top: 10%;
+  }
+}
 header .hero h1 {
   font-size: 7rem;
+}
+@media (max-width: 500px) {
+  header .hero h1 {
+    font-size: 6rem;
+  }
 }
 header .hero h2 {
   font-size: 3rem;

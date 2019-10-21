@@ -11,13 +11,30 @@ header {
 		width: 100vh;
 		height: 100vh;
 		margin: 0 22%;
-	
 		.flex(center, center);
         text-align: center;
         color: white;
 
+		@media @mobile {
+			margin: 0;
+			width: 100%;
+			align-items: flex-start;
+		}
+
+		div{
+			@media @mobile {
+				margin-top: 10%;
+			}
+		}
+
+
+
 		h1 {
 			font-size: 7rem;
+
+			@media @mobile{
+				font-size: 6rem;
+			}
 		}
 
 		h2 {
