@@ -251,3 +251,12 @@ header .hero .callToAction {
 header .hero .callToAction:hover {
   border: none;
 }
+main {
+  border: 1px solid red;
+}
+main .processContainer {
+  border: 1px solid blue;
+}
+main div {
+  border: 1px solid green;
+}
