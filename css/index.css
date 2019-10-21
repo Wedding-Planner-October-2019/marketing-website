@@ -135,7 +135,6 @@ html {
 html,
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -166,27 +165,43 @@ img {
   max-width: 100%;
   height: auto;
 }
-.hero {
-  width: 100vh;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-image: url("./images/weddingHero1.jpg");
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/weddingHero3.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.hero h1 {
-  font-size: 5rem;
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2%;
 }
-.hero h2 {
-  font-size: 2.5rem;
+header nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+header .hero {
+  width: 100vh;
+  height: 100vh;
+  margin: 0 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+header .hero h1 {
+  font-size: 7rem;
+}
+header .hero h2 {
+  font-size: 3rem;
   padding: 20px;
 }
-.hero .callToAction {
+header .hero .callToAction {
   background: #17A2B8;
   color: white;
   font-size: 2rem;
