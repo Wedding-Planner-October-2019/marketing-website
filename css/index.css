@@ -267,6 +267,7 @@ header .hero .callToAction:hover {
   border: 1px solid #212529;
   border-radius: 20px;
   background: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #process .processContainer div h3 {
   font-size: 2rem;
@@ -291,6 +292,7 @@ header .hero .callToAction:hover {
   height: auto;
   margin: 0.5%;
   padding: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.2s;
 }
 #portfolio .portfolioContainer div:hover {
@@ -300,38 +302,41 @@ header .hero .callToAction:hover {
   border-radius: 20px;
 }
 #portfolio .portfolioContainer div details summary {
+  border: none;
+  outline: none;
   font-size: 1.5rem;
 }
 #contact {
   text-align: center;
   margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contactContainer {
+  width: 50%;
 }
 #contact form {
   border: 1px solid #212529;
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #f2f2f2;
   padding: 20px;
   margin: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: column wrap;
 }
 #contact form input[type=text],
 #contact form select,
 #contact form textarea {
-  width: 50%;
-  /* Full width */
+  width: 85%;
   padding: 12px;
-  /* Some padding */
   border: 1px solid #212529;
   border-radius: 20px;
   outline: none;
   margin-top: 6px;
-  /* Add a top margin */
   margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+  resize: vertical;
 }
 #contact form input[type=submit] {
   background: Transparent;
@@ -362,25 +367,35 @@ footer p {
   text-align: center;
   color: #FFFFFF;
 }
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/aboutHeader.jpg");
+}
 .aboutContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .aboutContainer div {
   border: 1px solid #212529;
   border-radius: 20px;
-  width: 100%;
+  width: 23%;
   margin: 1%;
   padding: 1%;
   text-align: center;
   background: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .aboutContainer div img {
+  width: 300px;
+  height: 300px;
   border-radius: 20px;
   margin-bottom: 2%;
 }
 .aboutContainer div h3 {
   font-size: 2rem;
+}
+.aboutContainer div p {
+  padding: 1%;
 }
 .aboutContainer div a {
   font-size: 3rem;
