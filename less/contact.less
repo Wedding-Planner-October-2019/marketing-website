@@ -1,45 +1,48 @@
 // Contact Form Styles
 
-#contact{
-    text-align: center;
-    margin-top: 20px;
-    width: 100%;
-    .flex(center, center);
+#contact {
+	text-align: center;
+	margin-top: 20px;
+	width: 100%;
+	.flex(center, center);
 
-    .contactContainer{
-      width: 50%;
-    }
-    
-    
-   form{
-    .border();
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 1%;
-    flex-flow: column wrap;
+	.contactContainer {
+		width: 50%;
 
-    input[type=text], select, textarea {
-        width: 85%;
-        padding: 12px;
-        .border();
-        outline: none;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical 
-      }
+		@media @mobile {
+			width: 90%;
+		}
+	}
 
-    input[type=submit] {
-        .sendButton();
-        cursor: pointer;
+	form {
+		.border();
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: #f2f2f2;
+		padding: 20px;
+		margin: 1%;
+		flex-flow: column wrap;
 
-        &:hover {
-            background-color: darken(rgba(0, 0, 0, 0.2), 10);
-            border: none;
-            color: @white;
-          }
-      }
-  }
+		input[type="text"],
+		select,
+		textarea {
+			width: 85%;
+			padding: 12px;
+			.border();
+			outline: none;
+			margin-top: 6px;
+			margin-bottom: 16px;
+			resize: vertical;
+		}
 
-    
+		input[type="submit"] {
+			.sendButton();
+			cursor: pointer;
+
+			&:hover {
+				background-color: darken(rgba(0, 0, 0, 0.2), 10);
+				border: none;
+				color: @white;
+			}
+		}
+	}
 }
