@@ -263,6 +263,9 @@ main div {
 #process {
   text-align: center;
 }
+#process h2 {
+  padding: 20px;
+}
 #process .processContainer {
   display: flex;
   margin: 1%;
@@ -275,4 +278,29 @@ main div {
 #process .processContainer div h3 {
   font-size: 2rem;
   padding: 10px;
+}
+#portfolio {
+  text-align: center;
+}
+#portfolio h2 {
+  padding: 20px;
+}
+#portfolio .portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#portfolio .portfolioContainer div {
+  background: red;
+  width: 32%;
+  height: auto;
+  margin: 0.5%;
+  padding: 1%;
+}
+#portfolio .portfolioContainer div img {
+  width: 55%;
+  height: auto;
+}
+#portfolio .portfolioContainer div details summary {
+  font-size: 1.5rem;
 }
