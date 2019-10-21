@@ -309,9 +309,9 @@ header .hero .callToAction:hover {
   border: 1px solid #212529;
   border-radius: 20px;
   background: #FFFFFF;
-  width: 32%;
+  width: 30%;
   height: auto;
-  margin: 0.5%;
+  margin: 1.5%;
   padding: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.2s;
@@ -424,9 +424,13 @@ footer p {
     align-items: center;
   }
 }
-.aboutContainer div {
+.aboutContainer .card {
   border: 1px solid #212529;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
   width: 23%;
   margin: 1%;
   padding: 1%;
@@ -435,25 +439,25 @@ footer p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 500px) {
-  .aboutContainer div {
+  .aboutContainer .card {
     width: 80%;
     margin: 3%;
     padding: 20px;
   }
 }
-.aboutContainer div img {
+.aboutContainer .card img {
   width: 300px;
   height: 300px;
   border-radius: 20px;
   margin-bottom: 2%;
 }
-.aboutContainer div h3 {
+.aboutContainer .card h3 {
   font-size: 2rem;
 }
-.aboutContainer div p {
+.aboutContainer .card p {
   padding: 1%;
 }
-.aboutContainer div a {
+.aboutContainer .card a {
   font-size: 3rem;
   text-decoration: none;
   color: black;
