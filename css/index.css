@@ -231,7 +231,7 @@ header .hero {
 }
 @media (max-width: 500px) {
   header .hero div {
-    margin-top: 35%;
+    margin-top: 15%;
   }
 }
 @media (max-width: 500px) {
@@ -254,7 +254,7 @@ header .hero .callToAction {
   outline: none;
 }
 header .hero .callToAction:hover {
-  border: none;
+  border: 1px solid transparent;
 }
 #process {
   text-align: center;
