@@ -137,6 +137,7 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   margin: 0 auto;
+  background: rgba(255, 248, 220, 0.3);
 }
 h1,
 h2,
@@ -146,11 +147,14 @@ h5 {
   font-family: "Indie Flower", cursive;
 }
 h1 {
-  font-size: 7rem;
+  font-size: 9rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   padding-bottom: 10px;
+}
+h3 {
+  font-size: 3rem;
 }
 h4 {
   font-size: 2.5rem;
@@ -205,6 +209,11 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+@media (max-width: 500px) {
+  header {
+    height: 100vh;
+  }
+}
 header .hero {
   width: 100%;
   height: 100%;
@@ -222,11 +231,8 @@ header .hero {
 }
 @media (max-width: 500px) {
   header .hero div {
-    margin-top: 10%;
+    margin-top: 35%;
   }
-}
-header .hero h1 {
-  font-size: 7rem;
 }
 @media (max-width: 500px) {
   header .hero h1 {
@@ -234,7 +240,6 @@ header .hero h1 {
   }
 }
 header .hero h2 {
-  font-size: 3rem;
   padding: 20px;
 }
 header .hero .callToAction {
@@ -250,4 +255,228 @@ header .hero .callToAction {
 }
 header .hero .callToAction:hover {
   border: none;
+}
+#process {
+  text-align: center;
+}
+#process h2 {
+  padding: 20px;
+}
+#process .processContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  #process .processContainer {
+    flex-flow: column wrap;
+  }
+}
+#process .processContainer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  margin: 1%;
+  padding: 2%;
+  background: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 500px) {
+  #process .processContainer div {
+    padding: 2%;
+  }
+}
+#process .processContainer div h3 {
+  font-size: 2rem;
+  padding: 10px;
+}
+#portfolio {
+  text-align: center;
+  margin: 2%;
+  padding-bottom: 2%;
+  border-top: 1px solid rgba(0, 0, 0, 0.19);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 500px) {
+  #portfolio {
+    margin-top: 5%;
+  }
+}
+#portfolio h2 {
+  padding: 20px;
+}
+#portfolio .portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolioContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#portfolio .portfolioContainer div {
+  border-radius: 20px;
+  background: #f2f2f2;
+  width: 30%;
+  height: auto;
+  margin: 1.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.2s;
+}
+@media (max-width: 500px) {
+  #portfolio .portfolioContainer div {
+    width: 80%;
+    margin: 3%;
+  }
+}
+#portfolio .portfolioContainer div:hover {
+  transform: scale(1.1);
+}
+#portfolio .portfolioContainer div p {
+  padding: 1%;
+}
+#portfolio .portfolioContainer div details summary {
+  padding: 2%;
+  font-size: 1.5rem;
+}
+#contact {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contactContainer {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  #contact .contactContainer {
+    width: 90%;
+  }
+}
+#contact form {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 1%;
+  flex-flow: column wrap;
+}
+#contact form input[type="text"],
+#contact form select,
+#contact form textarea {
+  width: 85%;
+  padding: 12px;
+  border: 1px solid #212529;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#contact form input[type="submit"] {
+  background: Transparent;
+  color: black;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 1px solid #212529;
+  border-radius: 10px;
+  width: 15%;
+  text-align: center;
+  cursor: pointer;
+}
+#contact form input[type="submit"]:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: #FFFFFF;
+}
+footer {
+  margin-top: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/weddingHero3.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+footer nav {
+  margin: 0 30%;
+}
+footer nav i {
+  text-decoration: none;
+  font-size: 4rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  footer nav {
+    display: none;
+  }
+}
+footer p {
+  padding: 1%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/aboutHeader.jpg");
+}
+@media (max-width: 500px) {
+  .about h1 {
+    margin-top: 15%;
+  }
+}
+.aboutContent {
+  width: 100%;
+}
+.aboutContent .aboutContainer {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .aboutContent .aboutContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.aboutContent .aboutContainer .card {
+  width: 25%;
+  margin: 2% 4%;
+  padding: 1%;
+  text-align: center;
+  background: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .aboutContent .aboutContainer .card {
+    width: 80%;
+    margin: 3%;
+    padding: 20px;
+  }
+}
+.aboutContent .aboutContainer .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 2%;
+}
+.aboutContent .aboutContainer .card h3 {
+  font-size: 2rem;
+}
+.aboutContent .aboutContainer .card p {
+  padding: 1%;
+}
+.aboutContent .aboutContainer .card a {
+  padding-top: 2%;
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
 }

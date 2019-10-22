@@ -1,0 +1,69 @@
+// About Content Styles
+
+.about {
+	//Background img
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+		url("/images/aboutHeader.jpg");
+
+	h1 {
+		@media @mobile {
+			margin-top: 15%;
+		}
+	}
+}
+
+.aboutContent {
+    width: 100%;
+
+	.aboutContainer {
+        margin: 5%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		@media @mobile {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.card {
+			// .border();
+			width: 25%;
+			margin: 2% 4%;
+			padding: 1%;
+			text-align: center;
+			background: @card-bg;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 50%;
+
+			@media @mobile {
+				width: 80%;
+				margin: 3%;
+				padding: 20px;
+			}
+
+			img {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				margin-bottom: 2%;
+			}
+
+			h3 {
+				font-size: 2rem;
+			}
+
+			p {
+				padding: 1%;
+			}
+
+			a {
+				padding-top: 2%;
+				font-size: 3rem;
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
+}
