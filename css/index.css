@@ -287,6 +287,8 @@ header .hero .callToAction:hover {
 }
 @media (max-width: 500px) {
   #process .processContainer div {
+    width: 80%;
+    margin: 2%;
     padding: 2%;
   }
 }
