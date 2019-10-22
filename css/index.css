@@ -486,6 +486,12 @@ footer p {
     padding: 20px;
   }
 }
+@media (max-width: 800px) {
+  .aboutContent .aboutContainer .card {
+    background: rgba(255, 248, 220, 0.3);
+    box-shadow: none;
+  }
+}
 .aboutContent .aboutContainer .card img {
   width: 200px;
   height: 200px;
