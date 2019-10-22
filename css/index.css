@@ -396,6 +396,14 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+footer nav {
+  margin: 0 30%;
+}
+footer nav i {
+  text-decoration: none;
+  font-size: 4rem;
+  color: white;
+}
 @media (max-width: 500px) {
   footer nav {
     display: none;
