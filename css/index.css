@@ -203,7 +203,7 @@ nav a:hover {
 header {
   width: auto;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/weddingHero3.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("images/weddingHero3.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -262,6 +262,11 @@ header .hero .callToAction:hover {
 #process h2 {
   padding: 20px;
 }
+@media (max-width: 800px) {
+  #process {
+    margin: 5%;
+  }
+}
 #process .processContainer {
   display: flex;
   justify-content: space-around;
@@ -287,7 +292,15 @@ header .hero .callToAction:hover {
 }
 @media (max-width: 500px) {
   #process .processContainer div {
+    width: 80%;
+    margin: 2%;
     padding: 2%;
+  }
+}
+@media (max-width: 800px) {
+  #process .processContainer div {
+    width: 45%;
+    margin: 2%;
   }
 }
 #process .processContainer div h3 {
@@ -335,6 +348,12 @@ header .hero .callToAction:hover {
     margin: 3%;
   }
 }
+@media (max-width: 800px) {
+  #portfolio .portfolioContainer div {
+    width: 40%;
+    margin: 3%;
+  }
+}
 #portfolio .portfolioContainer div:hover {
   transform: scale(1.1);
 }
@@ -357,6 +376,11 @@ header .hero .callToAction:hover {
   width: 50%;
 }
 @media (max-width: 500px) {
+  #contact .contactContainer {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
   #contact .contactContainer {
     width: 90%;
   }
@@ -424,7 +448,7 @@ footer p {
   color: #FFFFFF;
 }
 .about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/aboutHeader.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("images/aboutHeader.jpg");
 }
 @media (max-width: 500px) {
   .about h1 {
@@ -460,6 +484,12 @@ footer p {
     width: 80%;
     margin: 3%;
     padding: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .aboutContent .aboutContainer .card {
+    background: rgba(255, 248, 220, 0.3);
+    box-shadow: none;
   }
 }
 .aboutContent .aboutContainer .card img {
