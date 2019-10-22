@@ -147,11 +147,14 @@ h5 {
   font-family: "Indie Flower", cursive;
 }
 h1 {
-  font-size: 7rem;
+  font-size: 9rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   padding-bottom: 10px;
+}
+h3 {
+  font-size: 3rem;
 }
 h4 {
   font-size: 2.5rem;
@@ -208,7 +211,7 @@ header {
 }
 @media (max-width: 500px) {
   header {
-    height: 65vh;
+    height: 100vh;
   }
 }
 header .hero {
@@ -228,11 +231,8 @@ header .hero {
 }
 @media (max-width: 500px) {
   header .hero div {
-    margin-top: 10%;
+    margin-top: 35%;
   }
-}
-header .hero h1 {
-  font-size: 7rem;
 }
 @media (max-width: 500px) {
   header .hero h1 {
@@ -240,7 +240,6 @@ header .hero h1 {
   }
 }
 header .hero h2 {
-  font-size: 3rem;
   padding: 20px;
 }
 header .hero .callToAction {
@@ -274,9 +273,7 @@ header .hero .callToAction:hover {
 }
 #process .processContainer div {
   margin: 1%;
-  border: 1px solid #212529;
-  border-radius: 20px;
-  background: #FFFFFF;
+  background: #f2f2f2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 500px) {
@@ -290,6 +287,15 @@ header .hero .callToAction:hover {
 }
 #portfolio {
   text-align: center;
+  margin: 2%;
+  padding-bottom: 2%;
+  border-top: 1px solid rgba(0, 0, 0, 0.19);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 500px) {
+  #portfolio {
+    margin-top: 5%;
+  }
 }
 #portfolio h2 {
   padding: 20px;
@@ -306,13 +312,11 @@ header .hero .callToAction:hover {
   }
 }
 #portfolio .portfolioContainer div {
-  border: 1px solid #212529;
   border-radius: 20px;
-  background: #FFFFFF;
+  background: #f2f2f2;
   width: 30%;
   height: auto;
   margin: 1.5%;
-  padding: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.2s;
 }
@@ -320,18 +324,16 @@ header .hero .callToAction:hover {
   #portfolio .portfolioContainer div {
     width: 80%;
     margin: 3%;
-    padding: 2%;
   }
 }
 #portfolio .portfolioContainer div:hover {
   transform: scale(1.1);
 }
-#portfolio .portfolioContainer div img {
-  border-radius: 20px;
+#portfolio .portfolioContainer div p {
+  padding: 1%;
 }
 #portfolio .portfolioContainer div details summary {
-  border: none;
-  outline: none;
+  padding: 2%;
   font-size: 1.5rem;
 }
 #contact {
@@ -351,7 +353,6 @@ header .hero .callToAction:hover {
   }
 }
 #contact form {
-  border: 1px solid #212529;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #f2f2f2;
@@ -413,47 +414,51 @@ footer p {
     margin-top: 15%;
   }
 }
-.aboutContainer {
+.aboutContent {
+  width: 100%;
+}
+.aboutContent .aboutContainer {
+  margin: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 @media (max-width: 500px) {
-  .aboutContainer {
+  .aboutContent .aboutContainer {
     flex-direction: column;
     align-items: center;
   }
 }
-.aboutContainer .card {
-  border: 1px solid #212529;
-  border-radius: 20px;
-  width: 23%;
-  margin: 1%;
+.aboutContent .aboutContainer .card {
+  width: 25%;
+  margin: 2% 4%;
   padding: 1%;
   text-align: center;
-  background: #FFFFFF;
+  background: #f2f2f2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
 }
 @media (max-width: 500px) {
-  .aboutContainer .card {
+  .aboutContent .aboutContainer .card {
     width: 80%;
     margin: 3%;
     padding: 20px;
   }
 }
-.aboutContainer .card img {
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
+.aboutContent .aboutContainer .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   margin-bottom: 2%;
 }
-.aboutContainer .card h3 {
+.aboutContent .aboutContainer .card h3 {
   font-size: 2rem;
 }
-.aboutContainer .card p {
+.aboutContent .aboutContainer .card p {
   padding: 1%;
 }
-.aboutContainer .card a {
+.aboutContent .aboutContainer .card a {
+  padding-top: 2%;
   font-size: 3rem;
   text-decoration: none;
   color: black;

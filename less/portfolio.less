@@ -2,6 +2,14 @@
 
 #portfolio {
     text-align: center;
+    margin: 2%;
+    padding-bottom: 2%;
+    border-top: 1px solid rgba(0, 0, 0, 0.19);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+
+    @media @mobile{
+        margin-top: 5%;
+    }
 
     h2{
         padding: 20px;
@@ -18,34 +26,33 @@
 
         }
         
-        div{
-            .border();
+        div{ 
+            border-radius: 20px;     
             background: @card-bg;
             width: 30%;
             height: auto;
             margin: 1.5%;
-            padding: 1%;
+            // padding: 1%;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             transition: transform .2s;
 
             @media @mobile{
                 width: 80%;
                 margin: 3%;
-                padding: 2%;
+                
             }
 
             &:hover{
                 transform: scale(1.1);
             }
 
-            img {
-                border-radius: 20px;
+            p{
+                padding: 1%;
             }
 
             details{
                 summary{
-                    border: none;
-                    outline: none;
+                    padding: 2%;
                     font-size: 1.5rem;
                 }
             }

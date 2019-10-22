@@ -1,61 +1,69 @@
 // About Content Styles
 
-.about{
-    //Background img
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/aboutHeader.jpg");
-    
-    h1{
-        @media @mobile{
-            margin-top: 15%;
-        }
-    }
+.about {
+	//Background img
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+		url("/images/aboutHeader.jpg");
+
+	h1 {
+		@media @mobile {
+			margin-top: 15%;
+		}
+	}
 }
 
-.aboutContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.aboutContent {
+    width: 100%;
 
-    @media @mobile{
-        flex-direction: column;
-        align-items: center;
-    }
+	.aboutContainer {
+        margin: 5%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 
-    .card {
-        .border(); 
-        width: 23%;
-        margin: 1%;
-        padding: 1%;
-        text-align: center;
-        background: @card-bg;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		@media @mobile {
+			flex-direction: column;
+			align-items: center;
+		}
 
-        @media @mobile{
-            width: 80%;
-            margin: 3%;
-            padding: 20px;;
-        }
+		.card {
+			// .border();
+			width: 25%;
+			margin: 2% 4%;
+			padding: 1%;
+			text-align: center;
+			background: @card-bg;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 50%;
 
-        img {
-            width: 300px;
-            height: 300px;
-            border-radius: 20px;
-            margin-bottom: 2%;
+			@media @mobile {
+				width: 80%;
+				margin: 3%;
+				padding: 20px;
+			}
 
-        }
+			img {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				margin-bottom: 2%;
+			}
 
-        h3{
-            font-size: 2rem;
-        }
+			h3 {
+				font-size: 2rem;
+			}
 
-        p{
-            padding: 1%;
-        }
+			p {
+				padding: 1%;
+			}
 
-        a {
-            font-size: 3rem;
-            text-decoration: none;
-            color: black;
-        }
-    }
+			a {
+				padding-top: 2%;
+				font-size: 3rem;
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
 }
