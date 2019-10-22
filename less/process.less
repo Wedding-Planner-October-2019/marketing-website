@@ -17,7 +17,7 @@
         margin: 1%;
 
         @media @mobile{
-            flex-flow: column wrap;
+            flex-flow: column nowrap;
 
         }
 
@@ -30,15 +30,15 @@
             background: @card-bg;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-            @media @mobile{
-                width: 80%;
-                margin: 2%;
-                padding: 2%;
-            }
-
             @media @tablet{
                 width: 45%;
                 margin: 2%;
+            }
+
+            @media @mobile{
+                width: 100%;
+                margin: 5%;
+                padding: 2%;
             }
 
             h3{

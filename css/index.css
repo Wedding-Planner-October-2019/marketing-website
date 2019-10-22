@@ -203,7 +203,7 @@ nav a:hover {
 header {
   width: auto;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("images/weddingHero3.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/weddingHero3.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -276,7 +276,7 @@ header .hero .callToAction:hover {
 }
 @media (max-width: 500px) {
   #process .processContainer {
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
   }
 }
 #process .processContainer div {
@@ -290,17 +290,17 @@ header .hero .callToAction:hover {
   background: #f2f2f2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-@media (max-width: 500px) {
-  #process .processContainer div {
-    width: 80%;
-    margin: 2%;
-    padding: 2%;
-  }
-}
 @media (max-width: 800px) {
   #process .processContainer div {
     width: 45%;
     margin: 2%;
+  }
+}
+@media (max-width: 500px) {
+  #process .processContainer div {
+    width: 100%;
+    margin: 5%;
+    padding: 2%;
   }
 }
 #process .processContainer div h3 {
@@ -342,15 +342,15 @@ header .hero .callToAction:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.2s;
 }
-@media (max-width: 500px) {
-  #portfolio .portfolioContainer div {
-    width: 80%;
-    margin: 3%;
-  }
-}
 @media (max-width: 800px) {
   #portfolio .portfolioContainer div {
     width: 40%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  #portfolio .portfolioContainer div {
+    width: 80%;
     margin: 3%;
   }
 }
@@ -418,7 +418,7 @@ header .hero .callToAction:hover {
 }
 #contact form input[type="submit"]:hover {
   background-color: rgba(0, 0, 0, 0.2);
-  border: none;
+  border: 1px solid grey;
   color: #FFFFFF;
 }
 footer {
@@ -448,7 +448,7 @@ footer p {
   color: #FFFFFF;
 }
 .about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("images/aboutHeader.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/images/aboutHeader.jpg");
 }
 @media (max-width: 500px) {
   .about h1 {
@@ -479,17 +479,17 @@ footer p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50%;
 }
+@media (max-width: 800px) {
+  .aboutContent .aboutContainer .card {
+    background: rgba(255, 248, 220, 0.3);
+    box-shadow: none;
+  }
+}
 @media (max-width: 500px) {
   .aboutContent .aboutContainer .card {
     width: 80%;
     margin: 3%;
     padding: 20px;
-  }
-}
-@media (max-width: 800px) {
-  .aboutContent .aboutContainer .card {
-    background: rgba(255, 248, 220, 0.3);
-    box-shadow: none;
   }
 }
 .aboutContent .aboutContainer .card img {

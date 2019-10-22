@@ -3,7 +3,7 @@
 .about {
 	//Background img
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-		url("images/aboutHeader.jpg");
+		url("/images/aboutHeader.jpg");
 
 	h1 {
 		@media @mobile {
@@ -37,15 +37,15 @@
 				0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			border-radius: 50%;
 
+			@media @tablet{
+				background: @main-bg-color;
+				box-shadow: none;
+			}
+
 			@media @mobile {
 				width: 80%;
 				margin: 3%;
 				padding: 20px;
-			}
-
-			@media @tablet{
-				background: @main-bg-color;
-				box-shadow: none;
 			}
 
 			img {
