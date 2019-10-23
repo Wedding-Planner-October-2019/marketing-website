@@ -367,6 +367,9 @@ header .hero .callToAction:hover {
   padding: 1%;
 }
 #portfolio .portfolioContainer div details summary {
+  cursor: pointer;
+  outline: none;
+  border: none;
   padding: 2%;
   font-size: 1.5rem;
 }
