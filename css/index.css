@@ -174,10 +174,12 @@ nav {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+  margin: 0 10%;
   padding-top: 2%;
 }
 @media (max-width: 500px) {
   nav {
+    margin: 0;
     flex-direction: column;
     padding-top: 0;
   }
@@ -194,7 +196,7 @@ nav a {
     width: 100%;
     text-align: center;
     background: rgba(0, 0, 0, 0.4);
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 nav a:hover {
@@ -231,7 +233,7 @@ header .hero {
 }
 @media (max-width: 500px) {
   header .hero div {
-    margin-top: 35%;
+    margin-top: 15%;
   }
 }
 @media (max-width: 500px) {
@@ -254,7 +256,7 @@ header .hero .callToAction {
   outline: none;
 }
 header .hero .callToAction:hover {
-  border: none;
+  border: 1px solid transparent;
 }
 #process {
   text-align: center;
@@ -439,7 +441,8 @@ footer nav i {
 }
 @media (max-width: 500px) {
   footer nav {
-    display: none;
+    flex-direction: row;
+    padding: 10px;
   }
 }
 footer p {
