@@ -203,7 +203,7 @@ nav a {
   }
 }
 nav a:hover {
-  color: pink;
+  color: #ffc0cb;
 }
 header {
   width: auto;
@@ -260,6 +260,7 @@ header .hero .callToAction {
 }
 header .hero .callToAction:hover {
   border: 1px solid transparent;
+  background: rgba(255, 192, 203, 0.45);
 }
 #process {
   text-align: center;
@@ -422,9 +423,8 @@ header .hero .callToAction:hover {
   cursor: pointer;
 }
 #contact form input[type="submit"]:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid grey;
-  color: #FFFFFF;
+  background: rgba(255, 192, 203, 0.45);
+  border: 1px solid transparent;
 }
 footer {
   margin-top: 20px;
@@ -441,6 +441,9 @@ footer nav i {
   text-decoration: none;
   font-size: 4rem;
   color: white;
+}
+footer nav i:hover {
+  color: #ffc0cb;
 }
 @media (max-width: 500px) {
   footer nav {
