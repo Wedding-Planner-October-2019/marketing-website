@@ -480,7 +480,7 @@ footer p {
   }
 }
 .aboutContent .aboutContainer .card {
-  width: 25%;
+  width: 25.3%;
   margin: 2% 4%;
   padding: 1%;
   text-align: center;
@@ -506,6 +506,12 @@ footer p {
   height: 200px;
   border-radius: 50%;
   margin-bottom: 2%;
+}
+@media (max-width: 1000px) {
+  .aboutContent .aboutContainer .card img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .aboutContent .aboutContainer .card h3 {
   font-size: 2rem;
