@@ -175,7 +175,13 @@ nav {
   align-items: center;
   justify-content: space-around;
   margin: 0 10%;
-  padding-top: 2%;
+  padding-top: 3%;
+}
+@media (max-width: 800px) {
+  nav {
+    margin: 0%;
+    padding-top: 5%;
+  }
 }
 @media (max-width: 500px) {
   nav {
@@ -186,6 +192,8 @@ nav {
 }
 nav a {
   text-decoration: none;
+  width: 10%;
+  transition: all 0.5s;
   font-size: 2rem;
   color: #FFFFFF;
 }
@@ -200,7 +208,7 @@ nav a {
   }
 }
 nav a:hover {
-  color: gray;
+  color: #ffc0cb;
 }
 header {
   width: auto;
@@ -257,6 +265,7 @@ header .hero .callToAction {
 }
 header .hero .callToAction:hover {
   border: 1px solid transparent;
+  background: rgba(255, 192, 203, 0.45);
 }
 #process {
   text-align: center;
@@ -363,6 +372,9 @@ header .hero .callToAction:hover {
   padding: 1%;
 }
 #portfolio .portfolioContainer div details summary {
+  cursor: pointer;
+  outline: none;
+  border: none;
   padding: 2%;
   font-size: 1.5rem;
 }
@@ -419,9 +431,8 @@ header .hero .callToAction:hover {
   cursor: pointer;
 }
 #contact form input[type="submit"]:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid grey;
-  color: #FFFFFF;
+  background: rgba(255, 192, 203, 0.45);
+  border: 1px solid transparent;
 }
 footer {
   margin-top: 20px;
@@ -438,6 +449,9 @@ footer nav i {
   text-decoration: none;
   font-size: 4rem;
   color: white;
+}
+footer nav i:hover {
+  color: #ffc0cb;
 }
 @media (max-width: 500px) {
   footer nav {
@@ -474,7 +488,7 @@ footer p {
   }
 }
 .aboutContent .aboutContainer .card {
-  width: 25%;
+  width: 25.3%;
   margin: 2% 4%;
   padding: 1%;
   text-align: center;
@@ -500,6 +514,12 @@ footer p {
   height: 200px;
   border-radius: 50%;
   margin-bottom: 2%;
+}
+@media (max-width: 1000px) {
+  .aboutContent .aboutContainer .card img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .aboutContent .aboutContainer .card h3 {
   font-size: 2rem;

@@ -28,7 +28,7 @@
 
 		.card {
 			// .border();
-			width: 25%;
+			width: 25.3%;
 			margin: 2% 4%;
 			padding: 1%;
 			text-align: center;
@@ -37,7 +37,7 @@
 				0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			border-radius: 50%;
 
-			@media @tablet{
+			@media @tablet {
 				background: @main-bg-color;
 				box-shadow: none;
 			}
@@ -53,6 +53,11 @@
 				height: 200px;
 				border-radius: 50%;
 				margin-bottom: 2%;
+
+				@media @laptop {
+					width: 150px;
+					height: 150px;
+				}
 			}
 
 			h3 {

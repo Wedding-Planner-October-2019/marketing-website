@@ -1,33 +1,41 @@
-// Nav Bar Styles 
+// Nav Bar Styles
 
 nav {
-    .flex(center, center);
-    justify-content: space-around;
-    margin: 0 10%;
-    padding-top: 2%;
-    
-    @media @mobile {
-        margin: 0;
-        flex-direction: column;
-        padding-top: 0;
-    }
+	.flex(center, center);
+	justify-content: space-around;
+	// flex-wrap: wrap;
+	margin: 0 10%;
+	padding-top: 3%;
 
-    a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: @nav-bar;
+	@media @tablet{
+		margin: 0%;
+		padding-top: 5%;
+	}
 
-        @media @mobile {
-            padding: 2%;
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            width: 100%;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.4);
-            font-size: 2rem;
-        }
-        
-        &:hover{
-            color: gray;
-        }
-    }
+	@media @mobile {
+		margin: 0;
+		flex-direction: column;
+		padding-top: 0;
+	}
+
+	a {
+		text-decoration: none;
+		width: 10%;
+		transition: all 0.5s;
+		font-size: 2rem;
+		color: @nav-bar;
+
+		@media @mobile {
+			padding: 2%;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			width: 100%;
+			text-align: center;
+			background: rgba(0, 0, 0, 0.4);
+			font-size: 2rem;
+		}
+
+		&:hover {
+			color: @nav-hover;
+		}
+	}
 }
